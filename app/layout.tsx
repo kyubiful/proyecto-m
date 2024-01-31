@@ -3,6 +3,7 @@ import { Onest } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Analytics } from '@vercel/analytics/react';
 
 const onest = Onest({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default function RootLayout({
           </div>
         </nav>
         {children}
+        <Analytics />
         <footer className="bg-[#1a1816] h-10 flex items-center justify-between px-12 text-white">
           <p className="text-sm">Evento hecho por <a className="text-blue-500" target="_blank" href="https://twitter.com/SouzaCarlosTV">@SouzaCarlosTV</a></p>
           <p className="text-sm">Web para la comunidad por creada por <a className="text-blue-500" target="_blank" href="https://github.com/kyubiful">@Kyubiful</a> ♥️</p>
