@@ -31,25 +31,25 @@ const mythicPlus: MythicPlusBestRun[] = [
     affixes: [],
     short_name: 'EB',
     score: 0,
-    dungeon: 'Eye of Azshara'
+    dungeon: 'The Everbloom'
   },
   {
     affixes: [],
     short_name: 'FALL',
     score: 0,
-    dungeon: 'Freehold'
+    dungeon: 'DOTI: Galakrond\'s Fall'
   },
   {
     affixes: [],
     short_name: 'RISE',
     score: 0,
-    dungeon: 'Kings\' Rest'
+    dungeon: 'DOTI: Murozond\'s Rise'
   },
   {
     affixes: [],
     short_name: 'TOTT',
     score: 0,
-    dungeon: 'Temple of the Tiger'
+    dungeon: 'Throne of the Tides'
   }
 ]
 
