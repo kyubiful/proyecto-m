@@ -10,7 +10,8 @@ const DpsOne = async () => {
   const tiers = extractTier(character.gear.items)
 
   const socialMedia = {
-    twitch: 'https://www.twitch.tv/phobyac'
+    twitch: 'https://www.twitch.tv/phobyac',
+    x: 'https://twitter.com/phobyac'
   }
 
   return (

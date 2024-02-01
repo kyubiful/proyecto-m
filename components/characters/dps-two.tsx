@@ -10,7 +10,8 @@ const DpsTwo = async () => {
   const tiers = extractTier(character.gear.items)
 
   const socialMedia = {
-    twitch: 'https://www.twitch.tv/miichiwi'
+    twitch: 'https://www.twitch.tv/miichiwi',
+    x: 'https://twitter.com/miichiwi'
   }
 
   return (

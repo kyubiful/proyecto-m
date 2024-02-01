@@ -10,7 +10,8 @@ const Healer = async () => {
   const tiers = extractTier(character.gear.items)
 
   const socialMedia = {
-    twitch: 'https://www.twitch.tv/norehh'
+    twitch: 'https://www.twitch.tv/norehh',
+    x: 'https://twitter.com/Norehh_stream'
   }
 
   return (

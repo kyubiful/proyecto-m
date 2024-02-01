@@ -10,7 +10,8 @@ const Tank = async () => {
   const tiers = extractTier(character.gear.items)
 
   const socialMedia = {
-    twitch: 'https://twitch.tv/souzacarlostv'
+    twitch: 'https://twitch.tv/souzacarlostv',
+    x: 'https://twitter.com/SouzaCarlosTV'
   }
 
   return (
