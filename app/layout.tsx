@@ -43,7 +43,7 @@ export default function RootLayout({
         <Analytics />
         <footer className="bg-[#1a1816] h-10 flex items-center justify-between px-12 text-white">
           <p className="text-sm">Evento hecho por <a className="text-blue-500" target="_blank" href="https://twitter.com/SouzaCarlosTV">@SouzaCarlosTV</a></p>
-          <p className="text-sm">Web para la comunidad por creada por <a className="text-blue-500" target="_blank" href="https://github.com/kyubiful">@Kyubiful</a> ♥️</p>
+          <p className="text-sm">Web para la comunidad creada por <a className="text-blue-500" target="_blank" href="https://github.com/kyubiful">@Kyubiful</a> ♥️</p>
         </footer>
       </body>
     </html>
