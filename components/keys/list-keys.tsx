@@ -58,8 +58,6 @@ const ListKeys = async () => {
 
   const character: WowCharacter = await response.json()
 
-  console.log(character)
-
   const tyrannical: MythicPlusBestRun[] = [...mythicPlus]
   const fortified: MythicPlusBestRun[] = [...mythicPlus]
 
