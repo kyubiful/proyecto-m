@@ -54,14 +54,30 @@ const mythicPlus: MythicPlusBestRun[] = [
 ]
 
 const ListKeys = async () => {
-  const response = await fetch("https://raider.io/api/v1/characters/profile?region=eu&realm=uldum&name=peruana&fields=mythic_plus_highest_level_runs", { cache: "no-cache" })
+  const response = await fetch("https://raider.io/api/v1/characters/profile?region=eu&realm=uldum&name=peruana&fields=mythic_plus_best_runs,mythic_plus_alternate_runs", { cache: "no-cache" })
 
   const character: WowCharacter = await response.json()
+
+  console.log(character)
 
   const tyrannical: MythicPlusBestRun[] = [...mythicPlus]
   const fortified: MythicPlusBestRun[] = [...mythicPlus]
 
-  character.mythic_plus_highest_level_runs.forEach((d: MythicPlusBestRun) => {
+  character.mythic_plus_best_runs.forEach((d: MythicPlusBestRun) => {
+    if (d.affixes?.find(element => element.name === 'Tyrannical')) {
+      const index = tyrannical.findIndex(element => element.short_name === d.short_name)
+      if (index !== -1) {
+        tyrannical[index] = d
+      }
+      return
+    }
+    const index = fortified.findIndex(element => element.short_name === d.short_name)
+    if (index !== -1) {
+      fortified[index] = d
+    }
+  })
+
+  character.mythic_plus_alternate_runs.forEach((d: MythicPlusBestRun) => {
     if (d.affixes?.find(element => element.name === 'Tyrannical')) {
       const index = tyrannical.findIndex(element => element.short_name === d.short_name)
       if (index !== -1) {

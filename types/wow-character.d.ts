@@ -18,6 +18,7 @@ export interface WowCharacter {
   mythic_plus_highest_level_runs: MythicPlusBestRun[];
   mythic_plus_ranks: MythicPlusRanks;
   mythic_plus_best_runs: MythicPlusBestRun[];
+  mythic_plus_alternate_runs: MythicPlusBestRun[];
   gear: Gear;
   talentLoadout: TalentLoadout;
 }
