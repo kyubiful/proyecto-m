@@ -1,6 +1,5 @@
 import { extractTier } from "@/lib/utils"
 import { Character } from "../character/character"
-import { Toaster } from "sonner"
 import { CharacterSkeleton } from "../character-skeleton/character-skeleton"
 
 const DpsThree = async () => {
