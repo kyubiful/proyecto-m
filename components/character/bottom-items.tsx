@@ -19,7 +19,7 @@ export const BottomItems = ({ character, socialMedia, tiers }: Props) => {
     <div className="flex flex-row justify-between items-center gap-1 z-10 w-full">
       {
         socialMedia?.x ?
-          <a href={socialMedia.x} className="size-10 flex justify-center items-center" target='_blank' rel='noreferrer'>
+          <a href={socialMedia.x} aria-label="link to twitter/X" className="size-10 flex justify-center items-center" target='_blank' rel='noreferrer'>
             <XIcon className="hover:text-white text-slate-400 transition-all" width={20} />
           </a> : <div className="size-10" />
       }
